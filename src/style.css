@@ -1,0 +1,26 @@
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  color: rebeccapurple;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+
+footer {
+  color: tomato;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.bar > div {
+  cursor: pointer;
+}
