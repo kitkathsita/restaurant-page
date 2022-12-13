@@ -1,3 +1,32 @@
+:root {
+  --grullo: #9B8C6Eff;
+  --smoky-black: #0C0A05ff;
+  --shadow: #90815Eff;
+  --grullo-2: #9B8F77ff;
+  --olive-drab-7: #352810ff;
+}
+
+@font-face {
+  font-family: 'signatra_demoregular';
+  src: url('signatra-webfont.woff2') format('woff2'),
+       url('signatra-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+       url('bebasneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  padding: 50px;
+}
+
 #content {
   display: flex;
   flex-direction: column;
@@ -6,9 +35,18 @@
 }
 
 header {
-  color: rebeccapurple;
-  font-family: 'Dancing Script', cursive;
-  font-size: 50px;
+  display: flex;
+  gap: 20px;
+  color: var(--grullo);
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'signatra_demoregular';
+  font-size: 120px;
+}
+
+header > img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
 }
 
 footer {
@@ -19,8 +57,21 @@ footer {
   display: flex;
   justify-content: space-around;
   gap: 50px;
+  color: white;
+  padding: 20px;
+  padding-top: 30px;
+  font-size: 40px;
+  font-family: 'bebas_neueregular';
 }
 
 .bar > div {
   cursor: pointer;
+}
+
+.bar>div:hover  {
+  color: var(--grullo);
+}
+
+main {
+  color: white;
 }

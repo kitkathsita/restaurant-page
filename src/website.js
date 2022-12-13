@@ -14,9 +14,12 @@ function initialWeb() {
 
 function createHeader() {
   const header = document.createElement('header')
-
-  header.innerHTML = 'apprendista'
-
+  const logo = document.createElement('img')
+  const name = document.createElement('div')
+  logo.src = '../dist/images/apprendistalogo.jpg'
+  header.appendChild(logo)
+  header.appendChild(name)
+  name.innerText = 'Apprendista'
   return header
 }
 
@@ -35,9 +38,12 @@ function createBar() {
   const contact = document.createElement('div')
 
   bar.classList.add('bar')
+  menu.classList.add('option')
+  home.classList.add('option')
+  contact.classList.add('option')
 
-  bar.appendChild(menu)
   bar.appendChild(home)
+  bar.appendChild(menu)
   bar.appendChild(contact)
 
   menu.innerText = 'menu'
@@ -59,8 +65,8 @@ function contentOfBar() {
   return content
 }
 
-function print() {
-  console.log('zoplamondá')
+function activeClass() {
+  
 }
 
 export default initialWeb
