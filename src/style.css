@@ -28,6 +28,8 @@ body {
 }
 
 #content {
+  position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +53,10 @@ header > img {
 
 footer {
   color: tomato;
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 2.5rem;
 }
 
 .bar {
@@ -75,6 +81,16 @@ footer {
 main {
   color: white;
   width: 100vw;
+  padding-bottom: 2.5rem;
+}
+
+.contentImg {
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+  width: min(600px, 30vw);
 }
 
 .menuOptionBar {

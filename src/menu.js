@@ -14,30 +14,46 @@ function menuContent() {
 
   const optionsMenu = document.querySelectorAll('.menuOption')
   optionsMenu.forEach(menuOption => menuOption.addEventListener('click', showMenu))
+  optionsMenu.forEach(menuOption => menuOption.addEventListener('mouseover', showMenu))
+
+  defaultMenu()
+}
+
+function defaultMenu() {
+  const mainDiv = document.querySelector('main')
+
+  const contImg = document.createElement('div')
+  contImg.classList.add('contentImg')
+  mainDiv.appendChild(contImg)
+  const menuImg = document.createElement('img')
+  menuImg.classList.add('images')
+  menuImg.src = '../dist/images/menu/antipasto.jpg'
+
+  contImg.appendChild(menuImg)
 }
 
 function showMenu() {
-  const mainDiv = document.querySelector('main')
-
-  const menuImg = document.createElement('img')
-  menuImg.classList.add('images')
-  menuImg.src = '../dist/images/antipasto.jpg'
+  const menuImg = document.querySelector('.images')
+  menuImg.src = ''
 
   if (this.innerHTML==='ANTIPASTO') {
-    menuImg.src = '../dist/images/antipasto.jpg'
+    menuImg.src = '../dist/images/menu/antipasto.jpg'
   } else if (this.innerHTML==='LASAGNA') {
-    menuImg.src = '../dist/images/lasagna.jpg'
+    menuImg.src = '../dist/images/menu/lasagna.jpg'
   } else if (this.innerHTML==='PASTA') {
-    menuImg.src = '../dist/images/pasta.jpg'
+    menuImg.src = '../dist/images/menu/pasta.jpg'
   } else if (this.innerHTML==='PANINI') {
-    menuImg.src = '../dist/images/panini.jpg'
+    menuImg.src = '../dist/images/menu/panini.jpg'
   } else if (this.innerHTML==='PIATTI SPECIALI') {
-    menuImg.src = '../dist/images/piattispeciali.jpg'
+    menuImg.src = '../dist/images/menu/piattispeciali.jpg'
+  } else if (this.innerHTML==='PIZZA') {
+    menuImg.src = '../dist/images/menu/pizza.jpg'
+  } else if (this.innerHTML==='DOLCE') {
+    menuImg.src = '../dist/images/menu/dolce.jpg'
   } else if (this.innerHTML==='BEBIDAS') {
-    menuImg.src = '../dist/images/bebidas.jpg'
+    menuImg.src = '../dist/images/menu/bebidas.jpg'
   }
 
-  mainDiv.appendChild(menuImg)
 }
 
 export default menuContent
