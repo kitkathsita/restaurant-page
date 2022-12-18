@@ -29,7 +29,6 @@ body {
 
 #content {
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,4 +103,60 @@ main {
 
 .menuOption:hover {
   color: var(--grullo);
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pictureFood {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.optFood {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.optFood > img {
+  width: 280px;
+}
+
+.optFood:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.optFood > div {
+  font-size: 40px;
+  font-family: 'bebas_neueregular';
+}
+
+.slogan {
+  font-family: 'signatra_demoregular';
+  font-size: 50px;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+#wpp, #ig {
+  display: flex;
+  font-size: 40px;
+  gap: 10px;
 }

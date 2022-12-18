@@ -8,7 +8,9 @@ function initialWeb() {
   cont.appendChild(createHeader())
   cont.appendChild(createBar())
   cont.appendChild(contentOfBar())
-  cont.appendChild(createFooter())
+  /* cont.appendChild(createFooter()) */
+
+  homeContent()
 
 }
 
@@ -60,13 +62,7 @@ function createBar() {
 function contentOfBar() {
   const content = document.createElement('main')
 
-  content.innerHTML = 'home'
-
   return content
-}
-
-function activeClass() {
-  
 }
 
 export default initialWeb
