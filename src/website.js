@@ -18,7 +18,7 @@ function createHeader() {
   const header = document.createElement('header')
   const logo = document.createElement('img')
   const name = document.createElement('div')
-  logo.src = '../dist/images/apprendistalogo.jpg'
+  logo.src = './images/apprendistalogo.jpg'
   header.appendChild(logo)
   header.appendChild(name)
   name.innerText = 'Apprendista'

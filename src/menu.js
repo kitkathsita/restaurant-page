@@ -27,7 +27,7 @@ function defaultMenu() {
   mainDiv.appendChild(contImg)
   const menuImg = document.createElement('img')
   menuImg.classList.add('images')
-  menuImg.src = '../dist/images/menu/antipasto.jpg'
+  menuImg.src = './images/menu/antipasto.jpg'
 
   contImg.appendChild(menuImg)
 }
@@ -37,21 +37,21 @@ function showMenu() {
   menuImg.src = ''
 
   if (this.innerHTML==='ANTIPASTO') {
-    menuImg.src = '../dist/images/menu/antipasto.jpg'
+    menuImg.src = './images/menu/antipasto.jpg'
   } else if (this.innerHTML==='LASAGNA') {
-    menuImg.src = '../dist/images/menu/lasagna.jpg'
+    menuImg.src = './images/menu/lasagna.jpg'
   } else if (this.innerHTML==='PASTA') {
-    menuImg.src = '../dist/images/menu/pasta.jpg'
+    menuImg.src = './images/menu/pasta.jpg'
   } else if (this.innerHTML==='PANINI') {
-    menuImg.src = '../dist/images/menu/panini.jpg'
+    menuImg.src = './images/menu/panini.jpg'
   } else if (this.innerHTML==='PIATTI SPECIALI') {
-    menuImg.src = '../dist/images/menu/piattispeciali.jpg'
+    menuImg.src = './images/menu/piattispeciali.jpg'
   } else if (this.innerHTML==='PIZZA') {
-    menuImg.src = '../dist/images/menu/pizza.jpg'
+    menuImg.src = './images/menu/pizza.jpg'
   } else if (this.innerHTML==='DOLCE') {
-    menuImg.src = '../dist/images/menu/dolce.jpg'
+    menuImg.src = './images/menu/dolce.jpg'
   } else if (this.innerHTML==='BEBIDAS') {
-    menuImg.src = '../dist/images/menu/bebidas.jpg'
+    menuImg.src = './images/menu/bebidas.jpg'
   }
 
 }
